@@ -1,0 +1,18 @@
+export const ButtonStyles = {
+    'none': 'pt-0',
+    '4xs': 'pt-0.5',
+    '3xs': 'pt-1',
+    '2xs': 'pt-2',
+    'xs': 'pt-3',
+    'sm': 'pt-4',
+    'md': 'pt-6',
+    'lg': 'pt-9',
+    'xl': 'pt-14',
+    '2xl': 'pt-20',
+    '3xl': 'pt-28',
+    '4xl': 'pt-32',
+    '5xl': 'pt-40',
+    '6xl': 'pt-44',
+    '7xl': 'pt-52',
+    '8xl': 'pt-56',
+}

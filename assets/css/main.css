@@ -1,0 +1,131 @@
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+
+/* Color theme overides
+ * Resource: https://blog.logrocket.com/applying-dynamic-styles-tailwind-css/
+ */
+:root {
+    /* --primary-50: 240 243 255;
+    --primary-100: 224 231 255;
+    --primary-200: 208 215 247;
+    --primary-300: 170 185 255;
+    --primary-400: 137 148 255;
+    --primary-500: 107 112 252;
+    --primary-600: 85 79 238;
+    --primary-700: 69 60 205;
+    --primary-800: 56 48 162;
+    --primary-900: 39 33 115; */
+
+    /* --secondary-50: 240 243 255;
+    --secondary-100: 224 231 255;
+    --secondary-200: 208 215 247;
+    --secondary-300: 170 185 255;
+    --secondary-400: 137 148 255;
+    --secondary-500: 107 112 252;
+    --secondary-600: 85 79 238;
+    --secondary-700: 69 60 205;
+    --secondary-800: 56 48 162;
+    --secondary-900: 39 33 115; */
+}
+/* [data-theme='theme-1'] {
+    --primary-50: 236 253 244;
+    --primary-100: 201 242 222;
+    --primary-200: 157 233 198;
+    --primary-300: 86 208 160;
+    --primary-400: 0 179 128;
+    --primary-500: 0 146 104;
+    --primary-600: 0 121 85;
+    --primary-700: 0 99 68;
+    --primary-800: 0 80 56;
+    --primary-900: 0 52 34;
+}
+[data-theme='theme-2'] {
+    --primary-50: 253 242 248;
+    --primary-100: 247 226 238;
+    --primary-200: 248 204 229;
+    --primary-300: 245 164 208;
+    --primary-400: 242 113 181;
+    --primary-500: 225 61 144;
+    --primary-600: 195 22 103;
+    --primary-700: 161 0 75;
+    --primary-800: 132 0 61;
+    --primary-900: 89 0 40;
+} */
+
+/* Setup base element css variables */
+:root {
+    --button: var(--primary-500);
+    --button-hover: var(--primary-600);
+    --button-text: var(--white);
+}
+
+ /* Fluid font size variables
+ * Reference: https://play.tailwindcss.com/Gf8bSHpsyx
+ * Resource: https://utopia.fyi/type/calculator
+ */
+ :root {
+    --font-size-xs:   clamp(0.90rem,  -0.25vw + 0.85rem, 0.57rem);
+    --font-size-sm:   clamp(0.95rem,  -0.15vw + 0.92rem, 0.75rem);
+    --font-size-base: clamp(1rem,     0vw     + 1rem,    1rem);
+    --font-size-lg:   clamp(1.125rem, 0.25vw  + 1rem,    1.25rem);
+    --font-size-xl:   clamp(1.27rem,  0.53vw  + 1.13rem, 1.77rem);
+    --font-size-2xl:  clamp(1.42rem,  0.98vw  + 1.18rem, 2.35rem);
+    --font-size-3xl:  clamp(1.6rem,   1.61vw  + 1.2rem,  3.13rem);
+    --font-size-4xl:  clamp(1.8rem,   2.48vw  + 1.18rem, 4.16rem);
+    --font-size-5xl:  clamp(2.03rem,  3.69vw  + 1.1rem,  5.53rem);
+    --font-size-6xl:  clamp(2.28rem,  5.35vw  + 0.94rem, 7.36rem);
+    --font-size-7xl:  clamp(2.57rem,  7.61vw  + 0.66rem, 9.79rem);
+}
+
+/* Fluid spacing variables
+ * Reference: https://play.tailwindcss.com/Gf8bSHpsyx
+ * Resource: https://utopia.fyi/space/calculator
+ */
+:root {
+    --spacing-05: clamp(0.44rem, -0.45vw + 0.55rem, 0.01rem);
+    --spacing-1:  clamp(0.49rem, -0.51vw + 0.62rem, 0.01rem);
+    --spacing-15: clamp(0.55rem, -0.57vw + 0.7rem, 0.02rem);
+    --spacing-2:  clamp(0.62rem, -0.64vw + 0.78rem, 0.02rem);
+    --spacing-25: clamp(0.7rem, -0.71vw + 0.88rem, 0.03rem);
+    --spacing-3:  clamp(0.79rem, -0.79vw + 0.99rem, 0.04rem);
+    --spacing-35: clamp(0.89rem, -0.89vw + 1.11rem, 0.05rem);
+    --spacing-4:  clamp(1rem, -0.99vw + 1.25rem, 0.06rem);
+    --spacing-5:  clamp(1.13rem, -1.1vw + 1.4rem, 0.08rem);
+    --spacing-6:  clamp(1.27rem, -1.22vw + 1.57rem, 0.11rem);
+    --spacing-7:  clamp(1.42rem, -1.34vw + 1.76rem, 0.15rem);
+    --spacing-8:  clamp(1.6rem, -1.48vw + 1.97rem, 0.2rem);
+    --spacing-9:  clamp(1.8rem, -1.62vw + 2.21rem, 0.26rem);
+    --spacing-10: clamp(2.03rem, -1.77vw + 2.47rem, 0.35rem);
+    --spacing-11: clamp(2.28rem, -1.92vw + 2.76rem, 0.46rem);
+    --spacing-12: clamp(2.57rem, -2.06vw + 3.08rem, 0.61rem);
+    --spacing-14: clamp(2.89rem, -2.18vw + 3.43rem, 0.81rem);
+    --spacing-16: clamp(3.25rem, -2.28vw + 3.82rem, 1.08rem);
+    --spacing-20: clamp(3.65rem, -2.33vw + 4.24rem, 1.44rem);
+    --spacing-24: clamp(4.11rem, -2.31vw + 4.69rem, 1.91rem);
+    --spacing-28: clamp(4.62rem, -2.19vw + 5.17rem, 2.55rem);
+    --spacing-32: clamp(5.2rem, -1.91vw + 5.68rem, 3.39rem);
+    --spacing-36: clamp(5.85rem, -1.42vw + 6.21rem, 4.5rem);
+    --spacing-40: clamp(6.58rem, -0.62vw + 6.74rem, 5.99rem);
+    --spacing-44: clamp(7.41rem, 0.59vw + 7.26rem, 7.97rem);
+    --spacing-48: clamp(8.33rem, 2.38vw + 7.74rem, 10.6rem);
+    --spacing-52: clamp(9.37rem, 4.97vw + 8.13rem, 14.09rem);
+    --spacing-56: clamp(10.55rem, 8.63vw + 8.39rem, 18.75rem);
+    --spacing-60: clamp(11.86rem, 13.76vw + 8.42rem, 24.93rem);
+    --spacing-64: clamp(13.35rem, 20.86vw + 8.13rem, 33.16rem);
+    --spacing-72: clamp(15.01rem, 30.62vw + 7.36rem, 44.1rem);
+    --spacing-80: clamp(16.89rem, 43.96vw + 5.9rem, 58.66rem);
+    --spacing-96: clamp(19rem, 62.12vw + 3.47rem, 78.01rem);
+}
